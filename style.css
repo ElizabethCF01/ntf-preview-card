@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+* {
+    box-sizing: border-box;
+}
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Outfit';
+}
+
+body {
+    margin: 0;
+    background-color: hsl(217, 54%, 11%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: hsl(0, 0%, 100%);
+}
+.container{
+    height: 100vh;
+}
+.d-flex{
+    display: flex;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.align-center{
+    align-items: center;
+}
+.flex-column{
+    flex-direction: column;
+}
+.txt-sm{
+    font-size: 15px;
+}
+.txt-light{
+    color: hsl(215, 51%, 70%);
+}
+.txt-cyan{
+  color:  hsl(178, 100%, 50%);
+}
+.txt-white{
+    transition: all 1s ease;
+    color:  hsl(0, 0%, 100%);
+}
+.txt-white:hover{
+    color:  hsl(178, 100%, 50%);
+}
+.txt-bold{
+    font-weight: 400;
+}
+.mr-2{
+    margin-right: 6px;
+}
+.card{
+    background-color:hsl(216, 50%, 16%);
+    margin-top: 0%;
+    max-width: 328px;
+    border-radius: 18px;
+    box-shadow: 0px 30px 6px 15px rgba(1, 12, 26, 0.11);
+}
+.img-container{
+    padding: 1.4rem 1.1rem 0 1.1rem;
+    position: relative;
+    transition: all .3s ease-in;
+}
+.card-image{
+    max-height: 278px;
+    border-radius: 10px;
+    z-index: 9;
+}
+.card-image:hover{
+    z-index: 0;
+}
+.overlay{
+    position: absolute;
+    top: 8.2%;
+    left: 8%;
+    background-color: hsla(178, 100%, 50%, 0.452);
+    height: 277px;
+    width: 276px;
+    border-radius: 11px;
+    z-index: 0px;
+}
+.overlay:hover{
+    z-index: 10;
+    background-color: hsla(178, 100%, 50%, 0.452);
+}
+.card-content{
+    padding: 10px 8% 5% 8%;
+}
+.card-title{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+.description{
+    line-height: 1.4rem;
+}
+.eth{
+    justify-content: space-between;
+    margin-top: 0;
+}
+.card-footer{
+border-top: .6px solid hsl(215, 32%, 27%);
+padding-top: 8px;
+}
+.avatar{
+    max-height: 33px;
+    border: 1px solid  hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+@media (min-width: 768px){
+    .card{
+        max-width: 350px;
+        border-radius: 16px;
+    }
+    .card-image{
+        max-height: 304px;
+    }
+    .overlay{
+        left: 6.8%;
+        height: 302px;
+        width: 302px;
+    }
+    .card-title{
+        font-weight: 400;
+    }
+    .txt-sm{
+        font-size: 18px;
+    }
+    .eth{
+        font-size: .9rem;
+        margin-top: 5px;
+    }
+    .card-footer{
+        margin-top: 6px;
+        padding-top: 4px;
+    }
+}
